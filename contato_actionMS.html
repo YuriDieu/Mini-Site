@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="cssMS/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="menulateral">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="noticias.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Notícias</a>
+        <a class="active" href="contatoMS.html"><i class="fa fa-address-card" aria-hidden="true"></i>Contatos</a>
+        <a href="sobre.html"><i class="fa fa-book" aria-hidden="true"></i>Sobre</a>
+    </div>
+
+    <script src="JavaScript/scriptMS.js"></script>
+    <div class="conteudo">
+
+        <h2 class="titleTop">Dados de Contato</h2>
+
+        <table class="tableCSS">
+            <tr><th>Chave</th><th>Valor</th></tr>
+            <script language=javascript>
+                var params = new Array();
+                params = getParameters();
+                for (let [key, value] of Object.entries(params)) {
+                    document.write("<tr><th>" + key + "</th><td>" + value + "</td></tr>");
+                }
+            </script>
+        </table>
+            <input type=button class="form-submit" 
+                   value=" << Retornar" onclick="history.back()">
+</body>
+</html>

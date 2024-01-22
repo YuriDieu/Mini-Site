@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpeNTouR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="cssMS/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1header">
+            <img class="imgheader" src="imgMS/logo_turismo.jpeg" alt="Logo OpeNTouR">
+        </h1>
+        <h2 class="titleTop">OpeNTouR</h2>
+    </header>
+    <div class="menulateral">
+        <a class="active" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="noticias.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Notícias</a>
+        <a href="contatoMS.html"><i class="fa fa-address-card" aria-hidden="true"></i>Contatos</a>
+        <a href="sobre.html"><i class="fa fa-book" aria-hidden="true"></i>Sobre</a>
+    </div>
+
+    <div class="conteudo">
+        <!-- <h2 class="titleTop">OpeNTouR</h2> -->
+        <h3 class="titleBottom">Pacotes de viagem</h3>
+        
+        <div class="primeiro">
+            <div class="menu">
+                <img class="imgStamp" src="imgMS/india.png">
+                <input class="modalButton" type="button" 
+ value="Detalhes" onclick="openModal('india');">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="imgMS/butao.png">
+                <input class="modalButton" type="button" 
+ value="Detalhes" onclick="openModal('butao');">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="imgMS/egito.png">
+                <input class="modalButton" type="button" 
+ value="Detalhes" onclick="openModal('egito');">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="imgMS/tailandia.png">
+                <input class="modalButton" type="button" 
+ value="Detalhes" onclick="openModal('tailandia');">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; Site desenvolvido por Yuri Matheus.
+    </footer>
+
+    <div id="knowMore" class="modal">
+        <header>
+            <span onclick="closeModal();" class="topright">X</span>
+        </header>
+        <div>
+            <p id="txt1" class="infoH"></p> 
+            <p id="txt2" class="info"></p>
+        </div>
+    </div>
+    <script src="JavaScript/scriptMS.js"></script>
+    </div>
+</body>
+</html>
